@@ -21,6 +21,6 @@ Minimal task
         Replace Text    {dd}             ${date.day}
     END
     
-    Set Header    ${회사명} ( ${date.month} )월 문서
+    Set Header    ${COMPANY_NM} ( ${date.month} )월 문서
     Export To Pdf       .//output//${date.year}-${date.month}-${date.day}
     Save Document As    .//output//${date.year}-${date.month}-${date.day}
